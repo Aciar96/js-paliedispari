@@ -21,23 +21,29 @@ Creare una funzione per capire se la parola inserita è palindroma*/
 // chiediamo all utente una parola 
 const word = prompt('inserisci una parola')
 
-let palindrome= false;
+let palidrome= false;
 //creo variabile per montare il testo
 let result =''
 // creo una funzione
-function getPalindrome(){
+
+
+
+function getPalidrome(){
     //creo un ciclo for per convertire la parola
     for(let i = word.length -1 ;i >= 0; i--){
         // converto la parola 
         result += word[i];
         console.log(result)
+        console.log (' la parola non e palidroma')
     }
    // se la parola e palidroma(True) stampo 'la parola è palidroma'
     if(result === word){
-        palindrome = true;
+        palidrome = true;
+        console.log(palidrome)
+        console.log('la parola e palidroma')
     }
- return palindrome;
+ return palidrome;
 }
-console.log(palindrome)
+console.log(palidrome)
 
-getPalindrome();
+getPalidrome();
