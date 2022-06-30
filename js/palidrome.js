@@ -19,16 +19,16 @@ Creare una funzione per capire se la parola inserita è palindroma*/
 
 
 // chiediamo all utente una parola 
-const word = prompt('inserisci una parola')
+const userWord = prompt('inserisci una parola').trim()
 
-let palidrome= false;
 //creo variabile per montare il testo
+let palidrome= false;
 let result =''
 // creo una funzione
 
 
 
-function getPalidrome(){
+function isPalidrome(word){
     //creo un ciclo for per convertire la parola
     for(let i = word.length -1 ;i >= 0; i--){
         // converto la parola 
@@ -46,4 +46,5 @@ function getPalidrome(){
 }
 console.log(palidrome)
 
-getPalidrome();
+const message = `la parola ${userWord}`;
+message += isPalidrome(userWord) ? 'è palidroma!' : 'non è palidroma'

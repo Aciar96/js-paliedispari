@@ -23,7 +23,7 @@ function getNumberFromUser(min = 1, max = 5) {
 
     //verifico che il numero sia effettivamente un numero e che il minimo e il massimo siano quelli indicati dalla domanda (quindi min=1 max=5)
     while (isNaN(numUser) || numUser < min || numUser > max) {
-        alert('Inserisci un numero e un numero valido da 1 a 5')
+        alert('Inserisci  un numero valido da 1 a 5')
     }
     return numUser;
 }
